@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BooksController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+   
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/Users/riverway/my_project_name/src/Controller/BooksController.php'|file_link(0) }}">src/Controller/BooksController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/Users/riverway/my_project_name/templates/books/index.html.twig'|file_link(0) }}">templates/books/index.html.twig</a></code></li>
+    </ul>
+
+
+  <div class="create-button">
+         <a href="https://127.0.0.1:8000/books">LIST</a>
+    </div>
+
+{{form(form)}}
+
+
+</div>
+{% endblock %}
